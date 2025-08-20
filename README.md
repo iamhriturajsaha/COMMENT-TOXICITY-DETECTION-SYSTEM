@@ -105,15 +105,12 @@ pip install pandas numpy matplotlib seaborn nltk scikit-learn tensorflow streaml
    ```
 
 2. **Prepare your data**
-   - Place `Train.csv` and `Test.csv` in the project directory
-   - Ensure CSV files contain the required columns
+   - Place `Train.csv` and `Test.csv` in the project directory.
+   - Ensure CSV files contain the required columns.
 
 3. **Run the training pipeline**
-   ```bash
-   Open Comment.ipynb in Jupyter/Colab and execute all cells
-   This will generate the trained model and preprocessing artifacts
-   ```
-
+   - Open `Comment.ipynb` in Jupyter/Colab and execute all cells.
+   
 4. **Launch the web application**
    ```bash
    streamlit run app.py
@@ -123,13 +120,12 @@ pip install pandas numpy matplotlib seaborn nltk scikit-learn tensorflow streaml
 
 ### 1. Data Preprocessing Pipeline
 ```
-Raw Text → Lowercase → Remove URLs/HTML → Tokenization → 
-Remove Stopwords → Lemmatization → Clean Text
+Raw Text → Lowercase → Remove URLs/HTML → Tokenization → Remove Stopwords → Lemmatization → Clean Text
 ```
 
 ### 2. Feature Engineering
-- **TF-IDF Vectorization** - Maximum 5,000 features
-- **Sequence Tokenization** - Maximum 50,000 words, padded to 200 tokens
+- **TF-IDF Vectorization** - Maximum 5,000 features.
+- **Sequence Tokenization** - Maximum 50,000 words, padded to 200 tokens.
 
 ### 3. Model Architecture
 ```python
@@ -158,6 +154,21 @@ The model achieves robust performance across all toxicity categories with -
 - Strong generalization to unseen data.
 - Balanced precision-recall trade-offs.
 
+### Visualizations 
+
+<table>
+  <tr>
+    <td align="center"><img src="Visualizations/1.png" width="500"></td>
+    <td align="center"><img src="Visualizations/2.png" width="500"></td>
+    <td align="center"><img src="Visualizations/3.png" width="500"></td>
+    <td align="center"><img src="Visualizations/4.png" width="500"></td>
+    <td align="center"><img src="Visualizations/5.png" width="500"></td>
+    <td align="center"><img src="Visualizations/6.png" width="500"></td>
+    <td align="center"><img src="Visualizations/7.png" width="500"></td>
+    <td align="center"><img src="Visualizations/8.png" width="500"></td>
+  </tr>
+</table>
+
 ## 🔮 Future Enhancements
 
 - **Transformer Integration** - Implement BERT/RoBERTa for improved accuracy.
@@ -165,5 +176,4 @@ The model achieves robust performance across all toxicity categories with -
 - **Enhanced UI** - Develop more interactive dashboards and visualizations.
 - **Production Deployment** - Migrate to cloud platforms (AWS, HuggingFace Spaces, Heroku).
 - **Real-time Processing** - Implement streaming data pipeline.
-
 - **Multi-language Support** - Extend to non-English comment detection.
