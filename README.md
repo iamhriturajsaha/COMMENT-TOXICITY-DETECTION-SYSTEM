@@ -89,6 +89,26 @@ The project uses the Toxic Comment Classification dataset with the following str
 5. **insult** - Personal insults.
 6. **identity_hate** - Identity-based harassment.
 
+### Visualizations 
+<table>
+  <tr>
+    <td align="center"><img src="Visualizations/1.png" width="500"></td>
+    <td align="center"><img src="Visualizations/2.png" width="500"></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="Visualizations/3.png" width="500"></td>
+    <td align="center"><img src="Visualizations/4.png" width="500"></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="Visualizations/5.png" width="500"></td>
+    <td align="center"><img src="Visualizations/6.png" width="500"></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="Visualizations/7.png" width="500"></td>
+    <td align="center"><img src="Visualizations/8.png" width="500"></td>
+  </tr>
+</table>
+
 ## 🚀 Quick Start
 
 ### Prerequisites
@@ -154,27 +174,6 @@ The model achieves robust performance across all toxicity categories with -
 - Strong generalization to unseen data.
 - Balanced precision-recall trade-offs.
 
-### Visualizations 
-
-<table>
-  <tr>
-    <td align="center"><img src="Visualizations/1.png" width="500"></td>
-    <td align="center"><img src="Visualizations/2.png" width="500"></td>
-  </tr>
-  <tr>
-    <td align="center"><img src="Visualizations/3.png" width="500"></td>
-    <td align="center"><img src="Visualizations/4.png" width="500"></td>
-  </tr>
-  <tr>
-    <td align="center"><img src="Visualizations/5.png" width="500"></td>
-    <td align="center"><img src="Visualizations/6.png" width="500"></td>
-  </tr>
-  <tr>
-    <td align="center"><img src="Visualizations/7.png" width="500"></td>
-    <td align="center"><img src="Visualizations/8.png" width="500"></td>
-  </tr>
-</table>
-
 ## 🔮 Future Enhancements
 
 - **Transformer Integration** - Implement BERT/RoBERTa for improved accuracy.
@@ -183,3 +182,4 @@ The model achieves robust performance across all toxicity categories with -
 - **Production Deployment** - Migrate to cloud platforms (AWS, HuggingFace Spaces, Heroku).
 - **Real-time Processing** - Implement streaming data pipeline.
 - **Multi-language Support** - Extend to non-English comment detection.
+
