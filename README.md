@@ -33,19 +33,19 @@ Online toxicity is a growing concern across digital platforms. This project prov
 
 ### Web Application Features
 
-#### Single Comment Prediction
+#### Single Comment Prediction -
 1. Enter a comment in the text area.
 2. Click "Predict".
 3. View probability scores for each category.
 4. See visual representation via bar chart.
 
-#### Batch Prediction
+#### Batch Prediction -
 1. Upload a CSV file with comments.
 2. Process multiple comments simultaneously.
 3. Download results with toxicity classifications.
 4. Analyze batch statistics.
 
-#### Model Insights
+#### Model Insights -
 - View training history (accuracy/loss curves).
 - Explore data visualizations.
 - Understand model performance metrics.
@@ -77,7 +77,7 @@ Online toxicity is a growing concern across digital platforms. This project prov
 The project uses the Toxic Comment Classification dataset with the following structure - 
 
 ### Input Data
-- **File Format** - CSV (Train.csv, Test.csv)
+- **File Format** - CSV (`Train.csv` and `Test.csv`)
 - **Primary Feature** - `comment_text`(Raw user comments)
 - **Target Labels** - 6 binary toxicity categories
 
@@ -160,10 +160,16 @@ The model achieves robust performance across all toxicity categories with -
   <tr>
     <td align="center"><img src="Visualizations/1.png" width="500"></td>
     <td align="center"><img src="Visualizations/2.png" width="500"></td>
+  </tr>
+  <tr>
     <td align="center"><img src="Visualizations/3.png" width="500"></td>
     <td align="center"><img src="Visualizations/4.png" width="500"></td>
+  </tr>
+  <tr>
     <td align="center"><img src="Visualizations/5.png" width="500"></td>
     <td align="center"><img src="Visualizations/6.png" width="500"></td>
+  </tr>
+  <tr>
     <td align="center"><img src="Visualizations/7.png" width="500"></td>
     <td align="center"><img src="Visualizations/8.png" width="500"></td>
   </tr>
