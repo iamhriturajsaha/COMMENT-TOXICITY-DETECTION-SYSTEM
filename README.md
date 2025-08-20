@@ -4,7 +4,7 @@ A comprehensive deep learning solution for detecting and classifying toxic comme
 
 ## 🎯 Overview
 
-Online toxicity is a growing concern across digital platforms. This project provides an end-to-end solution for automatically detecting and classifying toxic comments into six categories: **toxic**, **severe_toxic**, **obscene**, **threat**, **insult** and **identity_hate**.
+Online toxicity is a growing concern across digital platforms. This project provides an end-to-end solution for automatically detecting and classifying toxic comments into six categories - **toxic**, **severe_toxic**, **obscene**, **threat**, **insult** and **identity_hate**.
 
 ### Key Highlights
 - **Multi-label Classification** - Comments can belong to multiple toxic categories simultaneously.
@@ -28,6 +28,37 @@ Online toxicity is a growing concern across digital platforms. This project prov
 - ✅ **Word clouds** for each toxicity category.
 - ✅ **Model performance tracking** with accuracy and loss plots.
 - ✅ **Interactive prediction results** with probability scores.
+
+## 💻 Usage
+
+### Web Application Features
+
+#### Single Comment Prediction
+1. Enter a comment in the text area.
+2. Click "Predict".
+3. View probability scores for each category.
+4. See visual representation via bar chart.
+
+#### Batch Prediction
+1. Upload a CSV file with comments.
+2. Process multiple comments simultaneously.
+3. Download results with toxicity classifications.
+4. Analyze batch statistics.
+
+#### Model Insights
+- View training history (accuracy/loss curves).
+- Explore data visualizations.
+- Understand model performance metrics.
+
+### Quick Glance
+
+<p align="center">
+  <img src="Streamlit Images/1.png" alt="1" width="1000"/><br>
+  <img src="Streamlit Images/2.png" alt="2" width="1000"/><br>
+  <img src="Streamlit Images/3.png" alt="3" width="1000"/><br>
+  <img src="Streamlit Images/4.png" alt="4" width="1000"/><br>
+  <img src="Streamlit Images/5.png" alt="5" width="1000"/>
+</p>
 
 ## 🛠️ Technology Stack
 
@@ -79,8 +110,8 @@ pip install pandas numpy matplotlib seaborn nltk scikit-learn tensorflow streaml
 
 3. **Run the training pipeline**
    ```bash
-   # Open Comment.ipynb in Jupyter/Colab and execute all cells
-   # This will generate the trained model and preprocessing artifacts
+   Open Comment.ipynb in Jupyter/Colab and execute all cells
+   This will generate the trained model and preprocessing artifacts
    ```
 
 4. **Launch the web application**
@@ -114,32 +145,11 @@ Sequential([
 ```
 
 ### 4. Training Configuration
-- **Loss Function**: Binary crossentropy (multi-label)
-- **Optimizer**: Adam
-- **Epochs**: 10
-- **Batch Size**: 256
-- **Validation Split**: 20%
-
-## 💻 Usage
-
-### Web Application Features
-
-#### Single Comment Prediction
-1. Enter a comment in the text area.
-2. Click "Predict".
-3. View probability scores for each category.
-4. See visual representation via bar chart.
-
-#### Batch Prediction
-1. Upload a CSV file with comments.
-2. Process multiple comments simultaneously.
-3. Download results with toxicity classifications.
-4. Analyze batch statistics.
-
-#### Model Insights
-- View training history (accuracy/loss curves).
-- Explore data visualizations.
-- Understand model performance metrics.
+- **Loss Function** - Binary crossentropy (multi-label)
+- **Optimizer** - Adam
+- **Epochs** - 10
+- **Batch Size** - 256
+- **Validation Split** - 20%
 
 ## 📈 Model Performance
 
@@ -155,4 +165,5 @@ The model achieves robust performance across all toxicity categories with -
 - **Enhanced UI** - Develop more interactive dashboards and visualizations.
 - **Production Deployment** - Migrate to cloud platforms (AWS, HuggingFace Spaces, Heroku).
 - **Real-time Processing** - Implement streaming data pipeline.
+
 - **Multi-language Support** - Extend to non-English comment detection.
